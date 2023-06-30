@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme = "dark"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Message Board</title>
+    <style>
+      body{background-color: beige;}
+
+      h1 {
+        color: olive;
+        font-family: harrington, times; 
+        font-size: 40px; 
+      }
+
+      
+      p {
+        font-family: "times new roman", times, harrington;
+
+      }
+
+      table{
+        border: 2px solid black;
+      }
+
+      #submit{
+        margin-left: 25%;
+      }
+
+      #gift{
+        text-decoration: none;
+        font-size: 40px;
+        margin-left: 150px;
+      }
+
+      #gift:hover {
+        font-size: 55px;
+        background-color: lightcoral;
+        border-radius: 50%;
+      }
+
+      hr {
+        width: 40%;
+      }
+
+    </style>
+</head>
+<body>
+  <h1>Welcome to the message board!!</h1>
+  <br>
+<!--figure out how to send user inputs to an email addy-->
+<!--my email: https://navigator-bs.gmx.com/home?sid=dc64881255d9b0a53b7bd04d1088637a2f99baedf7d6c598a59114e917675a2520081f29ffe371d0ca5bdb6ea94b5a95-->
+<!--Inspect your email send button for hints on action url-->
+  <div style = "margin-left: 15px;">
+  <h3>Special Events:</h3>
+  <table cellspacing = 15px rules= "all">
+    <thead>
+      <tr>
+      <th>Date</th>
+      <th>Event</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>July 7, 2023</td>
+      <td>🎉<strong>Ma's Birthday!!! </strong>🥳🎉</td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <!--The forgotten books of Eden-->
+<!--https://www.sacred-texts.com/bib/fbe/index.htm#section_000-->
+  <h3>A gift for Ma: </h3>
+  <a id = "gift" href="https://www.sacred-texts.com/bib/fbe/index.htm#section_000">🎁</a>
+  <br><br><br>
+  <h3>NEWS UPDATE:</h3>
+  <p>Someone special turns 55!</p>
+  <p>[Add info]</p>
+
+  <br><br><br>
+
+  <hr>
+  <br>
+  
+  <h3>Send a Message:</h3><br>
+  <!--check github to see user input is sent to site-->
+  <!-- https://mrjr11.github.io/aMeki-Art/ -->
+  <form action= "/messages.html" method = "POST"> <!--SPECIFY WHERE TO SEND USER INFO-->
+    <label for="name">Name * </label><br> 
+    <input type="text" name = "fname" placeholder = "Enter Your Name" required><br><br><!--Specify name length limtations-->
+    <label for="email">Email *</label><br>
+    <input type="email" name = "email" placeholder = "Enter Email Address" required><br><br><!--Specify valid email criteria-->
+    <label for="message board">Message: </label><br>
+    <textarea name="Umessage" id="message-board" cols="60" rows="10"></textarea><br><br> 
+    
+    <input id = "submit" type="submit" value = "Send Message">
+  
+  </form>
+  </div>
+   <br> 
+   <br> 
+
+  <script src = "messages.js" charset = "utf-8"></script>
+</body>
+</html>
