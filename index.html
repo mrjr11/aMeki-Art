@@ -15,13 +15,19 @@
         img {width: 400px; height: 500px;}
 
         #title {
-          font-size: 55px; 
+          font-size: 50px; 
           text-align: center; 
           /*text-decoration: 2px underline overline double lightcoral;*/
           color: rosybrown;
           text-shadow: -5px 5px 4px black;
-          
         }  
+
+        .navbar-nav { 
+        color: white;
+        position: absolute; 
+        z-index:2;
+        }  
+        
       }
 
 
@@ -36,6 +42,14 @@
         /*look this up */
         background-blend-mode: saturation;
         }
+
+        .navbar-nav { 
+        color: white;
+        position: absolute; 
+        z-index:2;
+       
+        } 
+        
       }
 
     /******************************************End of queries*******************************************/
@@ -70,19 +84,6 @@
         color: transparent;
       }
 
-      #one{/*border: 10px inset goldenrod;*/
-        border: 10px ridge rosybrown;
-      }  
-
-      #two {/*border: 10px inset pink;*/ 
-        border: 10px ridge rosybrown;}  
-
-      #three {/*border: 10px inset rgb(236, 188, 97); */
-        border: 10px ridge rosybrown;}
-
-      #four {/*border: 10px inset powderblue; */
-        border: 10px ridge rosybrown;}
-
       hr {
         width: 50%; 
         border: 2px solid black;
@@ -90,6 +91,11 @@
         /* border: 2px black solid;  */
       }
 
+      
+
+      .imgborder{/*border: 10px inset goldenrod;*/
+        border: 10px ridge rosybrown;
+      } 
 
 
       .container {  
@@ -117,29 +123,25 @@
 
       .navbar-brand {
         color: rosybrown;
-        font-family: times, harrington;
+        font-family: harrington, times;
         font-size: 35px;
         /*border-right: 1px solid pink;*/
         width: 60px;
         height: 60px;
-        position: relative;
-        bottom: 5px; 
-        right: -10px;
+        margin-right: 200px;
       }
 
       .navbar-brand:hover {
         color: gold;
       }
-      .navbar-nav { 
-        margin-left: 150px; 
-      }
 
       #site:hover {
-        color: lightblue;
+        color: gold;
       }
     </style>
 </head>
 <body>
+<!--GIV THE NAVBAR A BACKGROUND COLOR IN THE @MEDIA /*SO THAT IT'S VISIBLE IN MOBILE MODE-->
 
 <nav class="navbar navbar-expand-lg bg-body-primary">
   <div class="container-fluid">
@@ -171,7 +173,7 @@
           <a class="nav-link" href ="./messages.html">*Message Board*</a>
         </li>
         <li class="nav-item" >
-          <a id = "invisible" class="nav-link" href ="./scrapbook.html">🎉 ¡¡Feliz Cumpleaños!! 🎉</a>
+          <a id = "invisible" class="nav-link" href ="./scrapbook.html">Scrapbook</a>
         </li>
       </ul>
     </div>
@@ -186,17 +188,20 @@
 <div class = "container">
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride = "true">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/Grateful-Meki.jpeg" id = "one" class="d-block w-80" alt="artistic portrait of sunflowers and birds on a tranquil day" width = "1100" height = "700">
+      <div class = "carousel-item active">
+        <img src="./images/mapaint8_1_23.jpg" class = "imgborder" id = "five" class="d-block w-80" alt="boat floating on an ocean in approaching land" width = "1100" height = "700">
       </div>
       <div class="carousel-item">
-        <img src="./images/pink-rose.jpeg" id = "two" class="d-block w-80" alt="an array of flowers on canvas" width = "1100" height = "700">
+        <img src="./images/Grateful-Meki.jpeg" class = "imgborder" id = "one" class="d-block w-80" alt="artistic portrait of sunflowers and birds on a tranquil day" width = "1100" height = "700">
       </div>
       <div class="carousel-item">
-        <img src="./images/flowers.jpg" id = "three" class="d-block w-80" alt="an array of colorful flowers" width = "1100" height = "700">
+        <img src="./images/pink-rose.jpeg" class = "imgborder" id = "two" class="d-block w-80" alt="an array of flowers on canvas" width = "1100" height = "700">
       </div>
       <div class="carousel-item">
-        <img src="./images/circleColor.jpg" id = "four" class="d-block w-80" alt="intersecting colorful circles" width = "600" height = "800">
+        <img src="./images/flowers.jpg" class = "imgborder" id = "three" class="d-block w-80" alt="an array of colorful flowers" width = "1100" height = "700">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/circleColor.jpg" class = "imgborder" id = "four" class="d-block w-80" alt="intersecting colorful circles" width = "600" height = "800">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
